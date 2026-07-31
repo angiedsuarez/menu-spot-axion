@@ -102,17 +102,25 @@
     .brand-symbol::after {
       content: "";
       position: absolute;
-      width: 102px;
-      height: 19px;
-      left: -10px;
-      top: 31px;
-      border-radius: 20px;
+      width: 88%;
+      height: 18%;
       background: #fff;
-      box-shadow: 0 2px 5px rgba(0,0,0,.18);
+      border-radius: 999px;
+
+      left: 50%;
+      top: 50%;
+
+      transform-origin: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,.15);
     }
 
-    .brand-symbol::before { transform: rotate(34deg); }
-    .brand-symbol::after { transform: rotate(-34deg); }
+    .brand-symbol::before {
+      transform: translate(-50%, -50%) rotate(35deg);
+    }
+
+    .brand-symbol::after {
+      transform: translate(-50%, -50%) rotate(-35deg);
+    }
 
     .brand-copy {
       line-height: .85;
