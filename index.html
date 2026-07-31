@@ -98,35 +98,28 @@
 }
 
     .brand-symbol::before,
-    .brand-symbol::after{
-      content:"";
-      position:absolute;
-      left:50%;
-      top:50%;
-      width:78%;
-      height:22%;
-      background:#fff;
+.brand-symbol::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:50%;
 
-      clip-path:polygon(
-          8% 50%,
-          18% 0%,
-          82% 0%,
-          92% 50%,
-          82% 100%,
-          18% 100%
-      );
+    width:94%;      /* antes 78% */
+    height:16%;     /* antes 22% */
 
-      transform-origin:center;
-      box-shadow:0 2px 4px rgba(0,0,0,.15);
-  }
+    background:#fff;
+    border-radius:999px;
 
-  .brand-symbol::before{
-      transform:translate(-50%,-50%) rotate(36deg);
-  }
+    transform-origin:center;
+}
 
-  .brand-symbol::after{
-    transform:translate(-50%,-50%) rotate(-36deg);
-  }
+.brand-symbol::before{
+    transform:translate(-50%,-50%) rotate(35deg);
+}
+
+.brand-symbol::after{
+    transform:translate(-50%,-50%) rotate(-35deg);
+}
   .brand-copy {
     line-height: .85;
     font-family: Montserrat, Arial, sans-serif;
