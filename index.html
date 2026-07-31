@@ -89,36 +89,33 @@
 
     .brand-symbol{
     width:60px;
-    aspect-ratio:1;
-    border-radius:50%;
+    height:60px;
     position:relative;
     overflow:hidden;
-    background:
-        radial-gradient(circle at 30% 25%, #ff5aa8 0%, #e50069 40%, #9d0f4d 100%);
+    border-radius:50%;
+    background:radial-gradient(circle at 30% 25%, #ff5aa8 0%, #e50069 45%, #9d0f4d 100%);
 }
 
-    .brand-symbol::before,
+.brand-symbol::before,
 .brand-symbol::after{
     content:"";
     position:absolute;
     left:50%;
     top:50%;
-
-    width:94%;      /* antes 78% */
-    height:16%;     /* antes 22% */
-
+    width:18px;
+    height:44px;
     background:#fff;
-    border-radius:999px;
-
+    border-radius:8px;
     transform-origin:center;
 }
 
 .brand-symbol::before{
-    transform:translate(-50%,-50%) rotate(35deg);
+    transform:translate(-50%,-50%) rotate(55deg);
 }
 
 .brand-symbol::after{
-    transform:translate(-50%,-50%) rotate(-35deg);
+    transform:translate(-50%,-50%) rotate(-55deg);
+}
 }
   .brand-copy {
     line-height: .85;
