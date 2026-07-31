@@ -96,26 +96,32 @@
     background:radial-gradient(circle at 30% 25%, #ff5aa8 0%, #e50069 45%, #9d0f4d 100%);
 }
 
-.brand-symbol::before,
 .brand-symbol::after{
     content:"";
     position:absolute;
-    left:50%;
-    top:50%;
     width:18px;
     height:44px;
     background:#fff;
     border-radius:8px;
-    transform-origin:center;
+    top:8px;
+    left:21px;
+    transform:rotate(-55deg);
 }
 
 .brand-symbol::before{
-    transform:translate(-50%,-50%) rotate(55deg);
+   content:"";
+    position:absolute;
+    width:18px;
+    height:44px;
+    background:#fff;
+    border-radius:8px;
+    top:8px;
+    left:21px;
+    transform:rotate(55deg);
 }
 
 .brand-symbol::after{
     transform:translate(-50%,-50%) rotate(-55deg);
-}
 }
   .brand-copy {
     line-height: .85;
