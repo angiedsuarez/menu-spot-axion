@@ -135,7 +135,24 @@
       letter-spacing: -.4px;
       text-transform: lowercase;
     }
-    
+    .header-text{
+      color:#fff;
+      text-align:right;
+    }
+
+    .header-text strong{
+      display:block;
+      color:var(--pink);
+      font:700 1.55rem Caveat, cursive;
+  }
+
+    .header-text p{
+      max-width:350px;
+      margin:5px 0 0;
+      color:#d5d5d5;
+      font-size:.89rem;
+      line-height:1.45;
+}
 
     /* =========================
        NAVEGACIÓN POR CATEGORÍAS
@@ -359,13 +376,13 @@
 
   .header-inner{
     width:calc(100% - 24px);
-    flex-direction:column;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
     align-items:center;
-    justify-content:center;
-    text-align:center;
     gap:14px;
-    padding:18px 0;
-  }
+    padding:16px 0;
+}
 
   .brand{
     justify-content:center;
@@ -385,7 +402,7 @@
 
   .header-text{
     display:block;
-    text-align:center;
+    text-align:right;
   }
 
   .header-text p{
