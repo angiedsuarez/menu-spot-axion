@@ -87,46 +87,51 @@
       text-decoration: none;
     }
 
-    .brand-symbol {
-      width: 60px;
-      aspect-ratio: 1;
-      border-radius: 50%;
-      position: relative;
-      overflow: hidden;
-      flex: 0 0 auto;
-      background: linear-gradient(145deg, #f10976 10%, #a31557 82%);
-      box-shadow: 0 8px 22px rgba(229,0,105,.35);
-    }
+    .brand-symbol{
+    width:60px;
+    aspect-ratio:1;
+    border-radius:50%;
+    position:relative;
+    overflow:hidden;
+    background:
+        radial-gradient(circle at 30% 25%, #ff5aa8 0%, #e50069 40%, #9d0f4d 100%);
+}
 
     .brand-symbol::before,
-    .brand-symbol::after {
-      content: "";
-      position: absolute;
-      width: 88%;
-      height: 18%;
-      background: #fff;
-      border-radius: 999px;
+    .brand-symbol::after{
+      content:"";
+      position:absolute;
+      left:50%;
+      top:50%;
+      width:78%;
+      height:22%;
+      background:#fff;
 
-      left: 50%;
-      top: 50%;
+      clip-path:polygon(
+          8% 50%,
+          18% 0%,
+          82% 0%,
+          92% 50%,
+          82% 100%,
+          18% 100%
+      );
 
-      transform-origin: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,.15);
-    }
+      transform-origin:center;
+      box-shadow:0 2px 4px rgba(0,0,0,.15);
+  }
 
-    .brand-symbol::before {
-      transform: translate(-50%, -50%) rotate(35deg);
-    }
+  .brand-symbol::before{
+      transform:translate(-50%,-50%) rotate(36deg);
+  }
 
-    .brand-symbol::after {
-      transform: translate(-50%, -50%) rotate(-35deg);
-    }
-
-    .brand-copy {
-      line-height: .85;
-      font-family: Montserrat, Arial, sans-serif;
-      letter-spacing: -2px;
-      text-transform: uppercase;
+  .brand-symbol::after{
+    transform:translate(-50%,-50%) rotate(-36deg);
+  }
+  .brand-copy {
+    line-height: .85;
+    font-family: Montserrat, Arial, sans-serif;
+    letter-spacing: -2px;
+    text-transform: uppercase;
     }
 
     .brand-copy strong {
