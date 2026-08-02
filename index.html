@@ -87,41 +87,11 @@
       text-decoration: none;
     }
 
-    .brand-symbol{
-    width:60px;
-    height:60px;
-    position:relative;
-    overflow:hidden;
-    border-radius:50%;
-    background:radial-gradient(circle at 30% 25%, #ff5aa8 0%, #e50069 45%, #9d0f4d 100%);
-}
-
-.brand-symbol::after{
-    content:"";
-    position:absolute;
-    width:18px;
-    height:44px;
-    background:#fff;
-    border-radius:8px;
-    top:8px;
-    left:21px;
-    transform:rotate(-55deg);
-}
-
-.brand-symbol::before{
-   content:"";
-    position:absolute;
-    width:18px;
-    height:44px;
-    background:#fff;
-    border-radius:8px;
-    top:8px;
-    left:21px;
-    transform:rotate(55deg);
-}
-
-.brand-symbol::after{
-    transform:translate(-50%,-50%) rotate(-55deg);
+    .brand-logo{
+    width:82px;
+    height:auto;
+    display:block;
+    flex-shrink:0;
 }
   .brand-copy {
     line-height: .85;
@@ -377,66 +347,49 @@
       color: #fff;
     }
 
-    @media (max-width:760px){
+    @media (max-width: 760px) {
+      .topbar {
+        min-height: 125px;
+      }
 
-  .topbar{
-    min-height:125px;
-  }
+      .brand-symbol {
+        width: 64px;
+      }
 
-  .header-inner{
-    width:calc(100% - 24px);
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:center;
-    gap:14px;
-    padding:16px 0;
-}
+      .header-text{
+        display:block;
+        text-align:center;
+        margin-top:12px;
+      }
 
-  .brand{
-    justify-content:center;
-  }
+      .header-text strong{
+        font-size:1.3rem;
+      }
 
-  .brand-symbol{
-    width:72px;
-  }
+      .header-text p{
+         margin:6px auto 0;
+         max-width:260px;
+        font-size:.82rem;
+        line-height:1.35;
+      }
 
-  .brand-copy strong{
-    font-size:2.2rem;
-  }
+      .category-nav-inner {
+        margin-left: 12px;
+        margin-right: 12px;
+      }
 
-  .brand-copy small{
-    font-size:.95rem;
-  }
+      main {
+        padding-top: 36px;
+      }
 
-  .header-text{
-    display:block;
-    text-align:right;
-  }
+      .items {
+        grid-template-columns: 1fr;
+      }
 
-  .header-text p{
-    max-width:300px;
-    margin:auto;
-  }
-
-  .category-nav-inner{
-    margin-left:12px;
-    margin-right:12px;
-  }
-
-  main{
-    padding-top:36px;
-  }
-
-  .items{
-    grid-template-columns:1fr;
-  }
-
-  .menu-section{
-    padding:25px 21px;
-  }
-
-}
+      .menu-section {
+        padding: 25px 21px;
+      }
+    }
 
     @media (max-width: 440px) {
       .header-inner,
@@ -476,7 +429,7 @@
   <header class="topbar">
     <div class="header-inner">
       <a class="brand" href="#inicio" aria-label="Ir al inicio">
-        <span class="brand-symbol" aria-hidden="true"></span>
+        <img src="img/logo-axion-6.png" alt="AXION energy" class="brand-logo">
         <span class="brand-copy">
           <strong>AXION</strong>
           <small>energy</small>
